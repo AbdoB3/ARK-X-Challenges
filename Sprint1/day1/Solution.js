@@ -1,4 +1,5 @@
-// return masked string
+//.......................Codewars Challenge.......................
+
 function maskify(cc) {
     let char="#"
     if(cc.length>4){

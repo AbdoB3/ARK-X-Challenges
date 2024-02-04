@@ -12,7 +12,3 @@ function writeFileAsync(path,content){
     )
       });
 }
-
-const processFiles = ()=>{
-    fs.readFile('demofile1.html', function(err, data) 
-}

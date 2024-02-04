@@ -1,3 +1,5 @@
+//.......................Codewars Challenge.......................
+
 function setReducer(input) {
          while (input.length >= 2) {
             let res=1;
