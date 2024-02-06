@@ -36,6 +36,7 @@ const calculatingBonuses= async ()=>{
                 emp.BonusAmount =  emp.AnnualSalary*10/100
             } 
         });
+
         const newWorksheet = xlsx.utils.json_to_sheet(myData);
             workbook.Sheets[firstSheetName] = newWorksheet;
             xlsx.writeFile(workbook, 'updated_example.xlsx');
