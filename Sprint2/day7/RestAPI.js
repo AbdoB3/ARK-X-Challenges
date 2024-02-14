@@ -12,6 +12,14 @@ let data = fs.readFileSync('products.json','utf-8');
 let products=JSON.parse(data)
 
 
+// Middleware 1: Logging middleware
+app.use((req, res, next) => {
+    let logs= `[${new Date().toISOString()}] ${req.method} ${req.url} \n`;
+    fs.appendFileSync("logs.txt", logs, "utf8");
+    next();
+  });
+
+
 
 app.get('/products',(req,res)=>{
     res.send(products)
@@ -25,9 +33,14 @@ app.get('/products/search',(req,res)=>{
 })
 
 
-app.get('/products/:id',(req,res)=>{
+app.get('/products/:id',(req,res,next)=>{
     let data=products.find(product=>product.id==req.params.id)
-    res.send(data)
+    if(data){
+        res.send(data)
+    }else{
+        const err = new Error('Example error');
+        next(err);
+    }
 })
 
 
@@ -64,10 +77,10 @@ app.delete('/products/:id',(req,res)=>{
     }
 })
 
-
-
-
-
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).json('Something broke!');
+  });
 
 app.listen(port,()=>{
     console.log(`listening to port ${port}`);
