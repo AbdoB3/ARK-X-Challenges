@@ -7,11 +7,10 @@ function matrixAddition(a, b){
         let row=[];
         for(let j=0;j<a.length;j++){
              row.push(a[i][j]+b[i][j])
-     
         }
         res.push(row)
     }
-    return res
+    
   }
 
 
