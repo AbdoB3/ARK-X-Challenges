@@ -1,0 +1,104 @@
+body{
+    background-color: #3f3483;
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.myNav input[type="text"]::placeholder {
+    color: white; /* Couleur du texte du placeholder */
+}
+header{
+    background-color: #312b55;
+    box-sizing: border-box;
+}
+.myNav input[type="text"]{
+    height: 25px; 
+    width: 200px;    
+    background-color: #312b55;
+    color: antiquewhite;
+    border-radius: 5px;
+    border-color: #7263cf;
+}
+
+input[type="button"], button{
+    height: 30px; 
+    width: 100px;    
+    background-color: #7263cf;
+    color: antiquewhite;
+    border-radius: 5px;
+}
+
+.hero a{
+    color: aliceblue;
+}
+
+nav a:hover{
+    background-color: aqua;
+}
+
+footer a:hover {
+    color: aqua; 
+    text-decoration: none; 
+}
+footer ul li:nth-child(1) {
+    color: red;
+}
+button:hover , input[type='button']:hover{
+    background-color: aqua  ;
+}
+
+
+.myNav{
+    padding: 10px;
+     
+}
+
+.myNav a{
+    font-size: xx-large;
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.myNav select{
+    margin: 0 20px;
+}
+.myNav ul li:last-child{
+    margin-right: 32%;
+}
+
+.myNav ul,
+.myNav ul li {
+    display: inline; 
+    margin-right: 10px; 
+}
+
+footer{
+    background-color: #ffcaca;
+    padding: 20px;
+}
+footer div{
+    box-sizing: border-box; 
+    padding: 10px;
+}
+
+.first-line div{
+    display: inline-block; 
+    margin-right: 350px;
+}
+.first-line div:last-child{ 
+    margin-right: 0;
+}
+
+.second-line ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.second-line div{
+    display: inline-block; 
+    margin-right: 600px;
+}
+.second-line div:last-child{ 
+    margin-right: 0;
+}
