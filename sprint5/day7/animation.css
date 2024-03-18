@@ -1,0 +1,16 @@
+@keyframes sequence {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); background-color: #3498db; }
+    100% { transform: scale(1); background-color: #2ecc71; }
+  }
+  
+  .sequence-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: sequence 4s infinite;
+  }

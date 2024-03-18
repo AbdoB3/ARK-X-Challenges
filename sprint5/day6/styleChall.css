@@ -40,9 +40,10 @@ input[type="button"], button{
 }
 
 
-.hero video{
+.hero img{
     width: 100%;
 }
+
 .hero div{
     margin: 10px 0;
 }
@@ -68,6 +69,19 @@ input[type="button"], button{
     font-size: 4rem;
 }
 
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main";
+}
+
+.images{
+    display: grid;
+    margin: 10px;
+    column-span: 3;
+}
+
 .section {
     display: flex;
     flex-wrap: wrap;
@@ -76,11 +90,6 @@ input[type="button"], button{
     margin:0 20px;
 }
 
-.sticky {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
 
 .btn {
     display: inline-block;

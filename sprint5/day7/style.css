@@ -1,0 +1,16 @@
+/* Button styling */
+.transition-button {
+    background-color: #007bff; /* Initial background color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Define transitions */
+  }
+  
+  /* Hover effect */
+  .transition-button:hover {
+    background-color: #28a745; /* Background color changes on hover */
+    transform: scale(1.1); /* Button scales up */
+  }

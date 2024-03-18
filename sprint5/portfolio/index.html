@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+      <!--Font Familly-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>BIHI Abderrahmane</title>
+
+    
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header">
+      <nav class="nav container">
+        <a href="#">Abderrahmane BIHI</a>
+        <div class="nav__menu " id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link active-link" href="home">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="skills">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="projects">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Mode <i class="ri-contrast-2-fill"></i></a>
+            </li>
+          </ul>
+  
+          <!--Close Button-->
+  
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <!--Toggle Button-->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <section>
+      <div class="hero__section container grid">
+        <div class="image-wrapper">
+          <img src="assets/img/ark x-109.jpg" alt="Abderrahmane BIHI">
+        </div>
+        <h2>Hi, I'am BIHI Abderrahmane👋</h2>
+        <h3 class="hero__title">Full stack developper</h3>
+        <p>Hello Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error maxime facere sint ab repellendus sit deleniti quos natus nostrum, deserunt expedita fuga optio totam et delectus! Provident reiciendis deleniti libero?
+        </p>
+        <a href="#" class="button home__button">My Resume <i class="ri-download-2-line"></i></a>
+
+        <div class="home__social">
+          <div class="home__social-links">
+            <a href="" class="home__social-link">
+              <i class="ri-linkedin-box-fill"></i>
+            </a>
+            <a href="" class="home__social-link">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a href="" class="home__social-link">
+              <i class="ri-twitter-x-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+     </section>
+
+    <section>
+      <div class="container skill__container">
+        <h2>Stack()</h2>
+        <div class="stacks">
+          <span class="title">HTML</span>
+          <div class="skill-bar ">
+            <span class="skill-per">
+              <span class="tooltip">90%</span>
+            </span>
+          </div>
+
+        </div>
+
+        <div class="stacks">
+          <span class="title">CSS</span>
+          <div class="skill-bar">
+            <span class="skill-per css">
+              <span class="tooltip">80%</span>
+            </span>
+          </div>
+
+        </div>
+
+        <div class="stacks">
+          <span class="title">NodeJS</span>
+          <div class="skill-bar ">
+            <span class="skill-per nodejs">
+              <span class="tooltip">70%</span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container myProjects">
+        <div class="project__header">
+          <h2>My project()</h2>
+          <p>What I'vecreated</p>
+        </div>
+        <div class="project__body">
+          <div class="w2-bar">
+            <button class="w2-bar-item w3-button" onclick="openCity('Static')">Static Application</button>
+            <button class="w2-bar-item w3-button" onclick="openCity('Dynamic')">Dynamic Application</button>
+          </div>
+          
+          <div id="Static" class="w3-container city">
+            <div class="project">
+              <div class="project__img">
+                <img src="bdkapp.webp"  alt="imgg">
+              </div>
+              <div class="project__content">
+                <h2>Static</h2>
+                <p>London is the capital city of England.</p>
+                <a href="#">Know more <i class="ri-github-fill"></i></a>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project__img">
+                <img src="portfolio3.webp" alt="imgg">
+              </div>
+              <div class="project__content">
+                <h2>Static</h2>
+                <p>London is the capital city of England.</p>
+                <a href="#" >Know more <i class="ri-github-fill"></i></a>
+              </div>
+            </div>
+
+          </div>
+          
+          <div id="Dynamic" class="w3-container city" style="display:none">
+            <div class="project">
+              <div class="project__img">
+                <img src="portfolio2.webp"  alt="imgg">
+              </div>
+              <div class="project__content">
+                <h2>Mobile</h2>
+                <p>Application mobile privée moderne et multiplateforme pour le groupe SCHNEIDER-ELECTRIC.</p>
+                <a href="#" >Know more <i class="ri-github-fill"></i></a>
+              </div>
+            </div> 
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+    <!--==================== FOOTER ====================-->
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Abderrahmane BIHI. All rights reserved.</p>
+      </div>
+    </footer>
+    
+ 
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
